@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_110dp"
+    android:background="@drawable/shape_cor_white_shadow"
+    android:layout_marginLeft="@dimen/dimen_15dp"
+    android:layout_marginRight="@dimen/dimen_15dp"
+    android:layout_marginTop="@dimen/dimen_10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="52.5dp"
+        android:layout_height="52.5dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:src="@drawable/icon_head"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            android:textSize="@dimen/dimen_12dp"
+            android:text="12"
+            android:background="@drawable/shape_small_circle_orange"
+            android:gravity="center"
+            android:textColor="@color/color_ffffff"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/notosanshans_regular"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="米娜"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/notosanshans_bold"
+        android:textSize="@dimen/dimen_18dp"
+        android:textColor="@color/color_000000"
+        android:layout_toRightOf="@id/rl_head"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_sex_man"
+        android:layout_toRightOf="@id/tv_name"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginLeft="@dimen/dimen_5dp"/>
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="杭州"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/notosanshans_medium"
+        android:textSize="@dimen/dimen_14dp"
+        android:textColor="@color/color_333333"
+        android:layout_toRightOf="@id/rl_head"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_below="@id/tv_name"/>
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="35岁"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/notosanshans_medium"
+        android:textSize="@dimen/dimen_14dp"
+        android:textColor="@color/color_333333"
+        android:layout_toRightOf="@id/tv_city"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_below="@id/tv_name"/>
+
+    <Button
+        android:layout_width="@dimen/dimen_60dp"
+        android:layout_height="@dimen/dimen_24dp"
+        android:background="@drawable/shape_radius_blue"
+        android:text="开单"
+        android:textColor="@color/color_ffffff"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/notosanshans_medium"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dimen_35dp"
+        android:layout_marginRight="@dimen/dimen_12dp"/>
+
+    <View
+        android:id="@+id/vv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_ececec"
+        android:layout_below="@id/rl_head"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_14dp"/>
+
+    <TextView
+        android:id="@+id/tv_disease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="糖尿病1型"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/notosanshans_medium"
+        android:textSize="@dimen/dimen_16dp"
+        android:textColor="@color/color_333333"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_below="@id/vv_line"/>
+
+    <TextView
+        android:id="@+id/tv_billing_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已开单10次"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/notosanshans_medium"
+        android:textSize="@dimen/dimen_16dp"
+        android:textColor="#20A8F6"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_below="@id/vv_line"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_12dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_185dp"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:background="@drawable/icon_banner"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:indicator_drawable_selected="@drawable/banner_selected"
+        app:indicator_drawable_unselected="@drawable/banner_unselected" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_qd" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:fontFamily="@font/notosanshans_regular"
+                android:includeFontPadding="false"
+                android:text="签到"
+                android:textColor="@color/color_000000"
+                android:textSize="@dimen/dimen_18dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_rw" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:fontFamily="@font/notosanshans_regular"
+                android:includeFontPadding="false"
+                android:text="任务"
+                android:textColor="@color/color_000000"
+                android:textSize="@dimen/dimen_18dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_lw" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:fontFamily="@font/notosanshans_regular"
+                android:includeFontPadding="false"
+                android:text="礼物"
+                android:textColor="@color/color_000000"
+                android:textSize="@dimen/dimen_18dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_sc" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:fontFamily="@font/notosanshans_regular"
+                android:includeFontPadding="false"
+                android:text="商城"
+                android:textColor="@color/color_000000"
+                android:textSize="@dimen/dimen_18dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_15dp">
+
+        <LinearLayout
+            android:id="@+id/ll_gtbk"
+            android:layout_width="@dimen/dimen_180dp"
+            android:layout_height="@dimen/dimen_70dp"
+            android:background="@drawable/icon_gtbk"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_9dp"
+                android:fontFamily="@font/notosanshans_medium"
+                android:includeFontPadding="false"
+                android:text="高糖百科"
+                android:textColor="@color/color_F65532"
+                android:textSize="@dimen/dimen_16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_9dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/notosanshans_medium"
+                android:includeFontPadding="false"
+                android:text="高糖人群必修课"
+                android:textColor="@color/color_F65532"
+                android:textSize="@dimen/dimen_12dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_jkgw"
+            android:layout_width="@dimen/dimen_180dp"
+            android:layout_height="@dimen/dimen_70dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_jkgw"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_9dp"
+                android:fontFamily="@font/notosanshans_medium"
+                android:includeFontPadding="false"
+                android:text="健康顾问"
+                android:textColor="@color/color_45B962"
+                android:textSize="@dimen/dimen_16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_9dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/notosanshans_medium"
+                android:includeFontPadding="false"
+                android:text="免费咨询，健康每一天"
+                android:textColor="@color/color_45B962"
+                android:textSize="@dimen/dimen_12dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_swbd"
+            android:layout_width="@dimen/dimen_180dp"
+            android:layout_height="@dimen/dimen_70dp"
+            android:layout_below="@id/ll_gtbk"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/icon_swbd"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_9dp"
+                android:fontFamily="@font/notosanshans_medium"
+                android:includeFontPadding="false"
+                android:text="食物宝典"
+                android:textColor="@color/color_9C51E7"
+                android:textSize="@dimen/dimen_16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_9dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/notosanshans_medium"
+                android:includeFontPadding="false"
+                android:text="食物热量、糖分、营养查询"
+                android:textColor="@color/color_9C51E7"
+                android:textSize="@dimen/dimen_12dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_jlxt"
+            android:layout_width="@dimen/dimen_180dp"
+            android:layout_height="@dimen/dimen_70dp"
+            android:layout_below="@id/ll_jkgw"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/icon_jlxt"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_9dp"
+                android:fontFamily="@font/notosanshans_medium"
+                android:includeFontPadding="false"
+                android:text="记录血糖"
+                android:textColor="@color/color_FC66C4"
+                android:textSize="@dimen/dimen_16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_9dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/notosanshans_medium"
+                android:includeFontPadding="false"
+                android:text="健康生活从纪录开始"
+                android:textColor="@color/color_FC66C4"
+                android:textSize="@dimen/dimen_12dp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_zx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_radius_orange_line"
+            android:fontFamily="@font/notosanshans_medium"
+            android:includeFontPadding="false"
+            android:padding="@dimen/dimen_4dp"
+            android:text="快讯"
+            android:textColor="@color/color_FF7F00"
+            android:textSize="@dimen/dimen_15dp" />
+
+        <com.xiaosu.view.text.VerticalRollingTextView
+            android:id="@+id/verticalRollingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_505050"
+            android:textSize="@dimen/dimen_14dp"
+            android:visibility="visible"
+            app:animInterval="10000"
+            app:itemCount="1"
+            android:tooltipText="@string/app_name"/>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:src="@drawable/icon_right" />
+
+    </LinearLayout>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_75dp"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:background="@drawable/icon_banner"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:indicator_drawable_selected="@drawable/banner_selected"
+        app:indicator_drawable_unselected="@drawable/banner_unselected" />
+
+
+</LinearLayout>

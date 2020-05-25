@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="1dp"
+        android:left="@dimen/dimen_3dp"
+        android:right="@dimen/dimen_3dp"
+        android:top="1dp">
+        <shape>
+            <solid android:color="#FF7F00" />
+
+
+            <corners
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp"
+
+                android:topRightRadius="10dp" /> <!-- 设置圆角半径 -->
+
+        </shape>
+    </item>
+
+</layer-list>

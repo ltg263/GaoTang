@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar_common" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_300dp"
+                    android:background="@drawable/icon_reward_bg">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_head"
+                        android:layout_width="@dimen/dimen_70dp"
+                        android:layout_height="@dimen/dimen_70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:src="@drawable/icon_head" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_below="@id/civ_head">
+
+
+                        <TextView
+                            android:id="@+id/tv_user_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/civ_head"
+                            android:layout_marginLeft="@dimen/dimen_15dp"
+                            android:fontFamily="@font/notosanshans_bold"
+                            android:text="9322"
+                            android:textColor="@color/color_ffffff"
+                            android:textSize="@dimen/dimen_40dp" />
+
+                        <Space
+                            android:layout_width="@dimen/dimen_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_mine_reward"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_35dp"
+                            android:layout_below="@id/civ_head"
+                            android:background="@drawable/shape_left_cor_white"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:paddingRight="@dimen/dimen_10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/huizhang" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的打赏"
+                                android:textColor="#17AA82" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <com.jxxx.gaotang.conpoment.widget.PileAvertView
+                        android:id="@+id/pv_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_below="@id/ll_money"/>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_100dp"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginTop="@dimen/dimen_220dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:src="@drawable/bangz" />
+
+            </FrameLayout>
+
+
+            <com.jxxx.gaotang.conpoment.widget.MyRadioGroup
+                android:id="@+id/my_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/color_ffffff"
+                android:layout_marginTop="@dimen/dimen_10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_15dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_ten"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_60dp"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_recharge_radiobutton"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="5元"
+                        android:textSize="@dimen/dimen_20dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_twenty"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_60dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:background="@drawable/selector_recharge_radiobutton"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="10元"
+                        android:textSize="@dimen/dimen_20dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_thirty"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_60dp"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_recharge_radiobutton"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="20元"
+                        android:textSize="@dimen/dimen_20dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_15dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_fifty"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_60dp"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_recharge_radiobutton"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="50元"
+                        android:textSize="@dimen/dimen_20dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_hundred"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_60dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:background="@drawable/selector_recharge_radiobutton"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="100元"
+                        android:textSize="@dimen/dimen_20dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_two_hundred"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_recharge_radiobutton"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="200元"
+                        android:textSize="@dimen/dimen_20dp"/>
+
+                </LinearLayout>
+
+            </com.jxxx.gaotang.conpoment.widget.MyRadioGroup>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                android:background="@drawable/shape_radius_orange_button"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:text="立即打赏"
+                android:textColor="@color/color_ffffff"/>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout> 

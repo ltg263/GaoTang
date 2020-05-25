@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_groups"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_14dp"
+        android:paddingRight="@dimen/dimen_14dp"
+        android:layout_marginTop="@dimen/dimen_30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen_1dp"
+            android:background="@color/color_FF7F00"
+            android:fontFamily="@font/notosanshans_bold"
+            android:includeFontPadding="false"
+            android:padding="@dimen/dimen_1dp"
+            android:text=""
+            android:textColor="@color/color_ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:fontFamily="@font/notosanshans_bold"
+            android:includeFontPadding="false"
+            android:text="部落圈"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/dimen_18dp" />
+
+        <Space
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:src="@drawable/icon_right" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

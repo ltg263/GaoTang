@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar_common"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_230dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_210dp"
+                    android:background="@drawable/gezi_bg"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="今日积分"
+                        android:textColor="@color/color_ffffff"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_18dp"
+                        android:layout_marginLeft="31dp"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_today_integral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300"
+                        android:textColor="@color/color_ffffff"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_14dp"
+                        android:textSize="@dimen/dimen_36dp"
+                        android:layout_below="@id/tv_one"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginBottom="@dimen/dimen_20dp"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总计积分"
+                        android:textColor="@color/color_ffffff"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+
+                        android:textSize="@dimen/dimen_18dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="31dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_all_integral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3849"
+                        android:textColor="@color/color_ffffff"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_14dp"
+                        android:textSize="@dimen/dimen_36dp"
+                        android:layout_below="@id/tv_two"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="31dp"
+                        android:layout_marginBottom="@dimen/dimen_20dp"/>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_70dp"
+                    android:background="@drawable/shape_cor_white"
+                    android:layout_marginLeft="@dimen/dimen_12dp"
+                    android:layout_marginRight="@dimen/dimen_12dp"
+                    android:layout_marginTop="@dimen/dimen_160dp">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_integral_detail"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="积分明细"
+                            android:textColor="@color/color_000000"
+                            android:fontFamily="@font/notosanshans_medium"
+                            android:includeFontPadding="false"
+                            android:textSize="@dimen/dimen_20dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_integral_exchange"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="积分换礼"
+                            android:textColor="@color/color_000000"
+                            android:fontFamily="@font/notosanshans_medium"
+                            android:includeFontPadding="false"
+                            android:textSize="@dimen/dimen_20dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/shape_cor_white"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:layout_marginLeft="@dimen/dimen_12dp"
+                android:layout_marginRight="@dimen/dimen_12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日常任务"
+                    android:textColor="@color/color_000000"
+                    android:fontFamily="@font/notosanshans_medium"
+                    android:includeFontPadding="false"
+                    android:textSize="@dimen/dimen_20dp"
+                    android:layout_marginLeft="@dimen/dimen_22dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_22dp"
+                    android:paddingRight="@dimen/dimen_22dp"
+                    android:paddingTop="@dimen/dimen_20dp"
+                    android:paddingBottom="@dimen/dimen_20dp">
+
+                    <ImageView
+                        android:id="@+id/iv_qd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_task_qd"/>
+
+                    <TextView
+                        android:id="@+id/tv_qd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日签到（0/1）"
+                        android:textColor="@color/color_000000"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_18dp"
+                        android:layout_toRightOf="@id/iv_qd"
+                        android:layout_marginLeft="@dimen/dimen_22dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一次可获得积分+10分"
+                        android:textColor="@color/color_999999"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:layout_toRightOf="@id/iv_qd"
+                        android:layout_below="@id/tv_qd"
+                        android:layout_marginLeft="@dimen/dimen_22dp"
+                        android:layout_marginTop="@dimen/dimen_9dp"/>
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:background="@drawable/shape_radius_orange_button"
+                        android:layout_alignParentEnd="true"
+                        android:text="领取"
+                        android:textColor="@color/color_ffffff"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_22dp"
+                    android:paddingRight="@dimen/dimen_22dp"
+                    android:paddingTop="@dimen/dimen_20dp"
+                    android:paddingBottom="@dimen/dimen_20dp">
+
+                    <ImageView
+                        android:id="@+id/iv_jkjl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_task_jkjl"/>
+
+                    <TextView
+                        android:id="@+id/tv_jkjl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="健康记录（0/30）"
+                        android:textColor="@color/color_000000"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_18dp"
+                        android:layout_toRightOf="@id/iv_jkjl"
+                        android:layout_marginLeft="@dimen/dimen_22dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一次可获得积分+20分"
+                        android:textColor="@color/color_999999"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:layout_toRightOf="@id/iv_jkjl"
+                        android:layout_below="@id/tv_jkjl"
+                        android:layout_marginLeft="@dimen/dimen_22dp"
+                        android:layout_marginTop="@dimen/dimen_9dp"/>
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:background="@drawable/shape_radius_orange_button"
+                        android:layout_alignParentEnd="true"
+                        android:text="领取"
+                        android:textColor="@color/color_ffffff"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_22dp"
+                    android:paddingRight="@dimen/dimen_22dp"
+                    android:paddingTop="@dimen/dimen_20dp"
+                    android:paddingBottom="@dimen/dimen_20dp">
+
+                    <ImageView
+                        android:id="@+id/iv_blqhd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_task_blqhd"/>
+
+                    <TextView
+                        android:id="@+id/tv_blqhd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="部落圈互动（0/30）"
+                        android:textColor="@color/color_000000"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_18dp"
+                        android:layout_toRightOf="@id/iv_blqhd"
+                        android:layout_marginLeft="@dimen/dimen_22dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一次可获得积分+10分"
+                        android:textColor="@color/color_999999"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:layout_toRightOf="@id/iv_blqhd"
+                        android:layout_below="@id/tv_blqhd"
+                        android:layout_marginLeft="@dimen/dimen_22dp"
+                        android:layout_marginTop="@dimen/dimen_9dp"/>
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:background="@drawable/shape_radius_orange_button"
+                        android:layout_alignParentEnd="true"
+                        android:text="领取"
+                        android:textColor="@color/color_ffffff"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/shape_cor_white"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:layout_marginLeft="@dimen/dimen_12dp"
+                android:layout_marginRight="@dimen/dimen_12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他任务"
+                    android:textColor="@color/color_000000"
+                    android:fontFamily="@font/notosanshans_medium"
+                    android:includeFontPadding="false"
+                    android:textSize="@dimen/dimen_20dp"
+                    android:layout_marginLeft="@dimen/dimen_22dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_22dp"
+                    android:paddingRight="@dimen/dimen_22dp"
+                    android:paddingTop="@dimen/dimen_20dp"
+                    android:paddingBottom="@dimen/dimen_20dp">
+
+                    <ImageView
+                        android:id="@+id/iv_bind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_task_bind"/>
+
+                    <TextView
+                        android:id="@+id/tv_bind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="绑定亲人（0/2）"
+                        android:textColor="@color/color_000000"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_18dp"
+                        android:layout_toRightOf="@id/iv_bind"
+                        android:layout_marginLeft="@dimen/dimen_22dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一次可获得积分+50分"
+                        android:textColor="@color/color_999999"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:layout_toRightOf="@id/iv_bind"
+                        android:layout_below="@id/tv_bind"
+                        android:layout_marginLeft="@dimen/dimen_22dp"
+                        android:layout_marginTop="@dimen/dimen_9dp"/>
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:background="@drawable/shape_radius_orange_button"
+                        android:layout_alignParentEnd="true"
+                        android:text="领取"
+                        android:textColor="@color/color_ffffff"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_22dp"
+                    android:paddingRight="@dimen/dimen_22dp"
+                    android:paddingTop="@dimen/dimen_20dp"
+                    android:paddingBottom="@dimen/dimen_20dp">
+
+                    <ImageView
+                        android:id="@+id/iv_tjhy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_task_tjhy"/>
+
+                    <TextView
+                        android:id="@+id/tv_tjhy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推荐好友（0/3）"
+                        android:textColor="@color/color_000000"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_18dp"
+                        android:layout_toRightOf="@id/iv_tjhy"
+                        android:layout_marginLeft="@dimen/dimen_22dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一次可获得积分+30分"
+                        android:textColor="@color/color_999999"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:layout_toRightOf="@id/iv_tjhy"
+                        android:layout_below="@id/tv_tjhy"
+                        android:layout_marginLeft="@dimen/dimen_22dp"
+                        android:layout_marginTop="@dimen/dimen_9dp"/>
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:background="@drawable/shape_radius_orange_button"
+                        android:layout_alignParentEnd="true"
+                        android:text="领取"
+                        android:textColor="@color/color_ffffff"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_22dp"
+                    android:paddingRight="@dimen/dimen_22dp"
+                    android:paddingTop="@dimen/dimen_20dp"
+                    android:paddingBottom="@dimen/dimen_20dp">
+
+                    <ImageView
+                        android:id="@+id/iv_yjfk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_task_yjfk"/>
+
+                    <TextView
+                        android:id="@+id/tv_yjfk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="意见反馈（0/1）"
+                        android:textColor="@color/color_000000"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_18dp"
+                        android:layout_toRightOf="@id/iv_yjfk"
+                        android:layout_marginLeft="@dimen/dimen_22dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一次可获得积分+30分"
+                        android:textColor="@color/color_999999"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:layout_toRightOf="@id/iv_yjfk"
+                        android:layout_below="@id/tv_yjfk"
+                        android:layout_marginLeft="@dimen/dimen_22dp"
+                        android:layout_marginTop="@dimen/dimen_9dp"/>
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:background="@drawable/shape_radius_orange_button"
+                        android:layout_alignParentEnd="true"
+                        android:text="领取"
+                        android:textColor="@color/color_ffffff"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_22dp"
+                    android:paddingRight="@dimen/dimen_22dp"
+                    android:paddingTop="@dimen/dimen_20dp"
+                    android:paddingBottom="@dimen/dimen_20dp">
+
+                    <ImageView
+                        android:id="@+id/iv_tg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_task_tg"/>
+
+                    <TextView
+                        android:id="@+id/tv_tg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="健康海报推广（0/1）"
+                        android:textColor="@color/color_000000"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_18dp"
+                        android:layout_toRightOf="@id/iv_tg"
+                        android:layout_marginLeft="@dimen/dimen_22dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一次可获得积分+20分"
+                        android:textColor="@color/color_999999"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:layout_toRightOf="@id/iv_tg"
+                        android:layout_below="@id/tv_tg"
+                        android:layout_marginLeft="@dimen/dimen_22dp"
+                        android:layout_marginTop="@dimen/dimen_9dp"/>
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:background="@drawable/shape_radius_orange_button"
+                        android:layout_alignParentEnd="true"
+                        android:text="领取"
+                        android:textColor="@color/color_ffffff"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_22dp"
+                    android:paddingRight="@dimen/dimen_22dp"
+                    android:paddingTop="@dimen/dimen_20dp"
+                    android:paddingBottom="@dimen/dimen_20dp">
+
+                    <ImageView
+                        android:id="@+id/iv_xxws"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_task_xxws"/>
+
+                    <TextView
+                        android:id="@+id/tv_xxws"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个人信息完善（首次）"
+                        android:textColor="@color/color_000000"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_18dp"
+                        android:layout_toRightOf="@id/iv_xxws"
+                        android:layout_marginLeft="@dimen/dimen_22dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="基础信息、个人档案、微信、\n健康顾问绑定等"
+                        android:textColor="@color/color_999999"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:layout_toRightOf="@id/iv_xxws"
+                        android:layout_below="@id/tv_xxws"
+                        android:layout_marginLeft="@dimen/dimen_22dp"
+                        android:layout_marginTop="@dimen/dimen_9dp"/>
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:background="@drawable/shape_radius_orange_button"
+                        android:layout_alignParentEnd="true"
+                        android:text="领取"
+                        android:textColor="@color/color_ffffff"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_22dp"
+                    android:paddingRight="@dimen/dimen_22dp"
+                    android:paddingTop="@dimen/dimen_20dp"
+                    android:paddingBottom="@dimen/dimen_20dp">
+
+                    <ImageView
+                        android:id="@+id/iv_hd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_task_hd"/>
+
+                    <TextView
+                        android:id="@+id/tv_hd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="参加活动（0/1）"
+                        android:textColor="@color/color_000000"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_18dp"
+                        android:layout_toRightOf="@id/iv_hd"
+                        android:layout_marginLeft="@dimen/dimen_22dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一次可获得积分+50分"
+                        android:textColor="@color/color_999999"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:layout_toRightOf="@id/iv_hd"
+                        android:layout_below="@id/tv_hd"
+                        android:layout_marginLeft="@dimen/dimen_22dp"
+                        android:layout_marginTop="@dimen/dimen_9dp"/>
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:background="@drawable/shape_radius_orange_button"
+                        android:layout_alignParentEnd="true"
+                        android:text="领取"
+                        android:textColor="@color/color_ffffff"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout> 

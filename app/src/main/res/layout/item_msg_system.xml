@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_15dp">
+
+    <ImageView
+        android:id="@+id/iv_msg_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_msg_xx"/>
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019-9-20 13:00"
+        android:textColor="@color/color_999999"
+        android:layout_toRightOf="@id/iv_msg_logo"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:fontFamily="@font/notosanshans_regular"
+        android:includeFontPadding="false"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您已经与微信用户Ai智能营销-周华绑定为亲友关系。您有血糖异常时会实时微信通知给他"
+        android:textColor="@color/color_333333"
+        android:layout_toRightOf="@id/iv_msg_logo"
+        android:layout_below="@id/tv_time"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:fontFamily="@font/notosanshans_medium"
+        android:includeFontPadding="false"
+        android:background="@drawable/shape_radius_common_gery"
+        android:padding="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"/>
+
+</RelativeLayout>

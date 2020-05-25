@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragment.main.HomeFragment">
+
+    <include layout="@layout/include_home_tablayout"/>
+
+    <com.jxxx.gaotang.conpoment.widget.TabWithScrollView
+        android:id="@+id/tabs_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_home"/>
+
+            <include layout="@layout/include_recommend"/>
+
+            <include layout="@layout/include_groups"/>
+
+        </LinearLayout>
+
+
+
+    </com.jxxx.gaotang.conpoment.widget.TabWithScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar_common"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_cor_white_shadow"
+            android:layout_margin="@dimen/dimen_15dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60dp"
+                android:layout_marginLeft="@dimen/dimen_60dp"
+                android:layout_marginTop="@dimen/dimen_20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_head"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:src="@drawable/icon_head"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="胖头鱼"
+                    android:textColor="@color/color_000000"
+                    android:textSize="@dimen/dimen_14dp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/notosanshans_medium"
+                    android:layout_toRightOf="@id/civ_head"
+                    android:layout_marginTop="@dimen/dimen_7dp"
+                    android:layout_marginLeft="@dimen/dimen_12dp"/>
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID6566684"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/dimen_14dp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/notosanshans_medium"
+                    android:layout_toRightOf="@id/civ_head"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dimen_7dp"
+                    android:layout_marginLeft="@dimen/dimen_12dp"/>
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="@dimen/dimen_250dp"
+                android:layout_height="@dimen/dimen_250dp"
+                android:src="@drawable/icon_head"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_20dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1、请将二维码分享给微信好友\n2、好友打开高糖App，选择右上角“+”
+    再选择“扫描邀请二维码”"
+                android:layout_marginLeft="@dimen/dimen_60dp"
+                android:layout_marginRight="@dimen/dimen_60dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:textSize="@dimen/dimen_12dp"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100dp"
+        android:background="@color/color_ffffff">
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下载"
+                android:textColor="@color/color_000000"
+                android:fontFamily="@font/notosanshans_medium"
+                android:includeFontPadding="false"
+                android:layout_marginTop="@dimen/dimen_5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享"
+                android:textColor="@color/color_000000"
+                android:fontFamily="@font/notosanshans_medium"
+                android:includeFontPadding="false"
+                android:layout_marginTop="@dimen/dimen_5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下载"
+                android:textColor="@color/color_000000"
+                android:fontFamily="@font/notosanshans_medium"
+                android:includeFontPadding="false"
+                android:layout_marginTop="@dimen/dimen_5dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout> 

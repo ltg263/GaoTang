@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_5dp"
+    android:layout_marginBottom="@dimen/dimen_10dp"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_type_pic"
+        android:layout_width="@dimen/dimen_50dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:src="@drawable/icon_mall_type"/>
+
+    <TextView
+        android:id="@+id/tv_type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="儿童玩具"
+        android:fontFamily="@font/notosanshans_bold"
+        android:includeFontPadding="false"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/color_DF2E0E</item>
+        <item name="colorControlHighlight">@color/color_DF2E0E</item>
+    </style>
+
+    <style name="WarpLinearLayoutDefault">
+        <item name="grivate">left</item>
+        <item name="horizontal_Space">20dp</item>
+        <item name="vertical_Space">20dp</item>
+        <item name="isFull">false</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/dimen_16dp</item>
+        <item name="android:fontFamily">@font/notosanshans_medium</item>
+        <item name="android:includeFontPadding">false</item>
+
+
+    </style>
+
+    <style name="TabLayoutTextStyle_home" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/dimen_14dp</item>
+        <item name="android:fontFamily">@font/notosanshans_bold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TabLayoutTextStyle_detail">
+        <item name="android:textSize">@dimen/dimen_20dp</item>
+        <item name="android:fontFamily">@font/notosanshans_bold</item>
+        <item name="android:includeFontPadding">false</item>
+
+
+    </style>
+
+    <style name="checkBoxStyle">
+        <item name="android:button">@drawable/collection_checkbox</item>
+    </style>
+
+    <declare-styleable name="searchmlist">
+        <attr name="search_hint" format="string|reference"/><!--EditText hint-->
+        <attr name="search_baground" format="reference"/><!--EditText  background-->
+    </declare-styleable>
+
+    <style name="CommonCheckBoxStyle">
+        <item name="android:button">@drawable/common_checkbox</item>
+    </style>
+
+    <style name="BlueCheckBoxStyle">
+        <item name="android:button">@drawable/blue_checkbox</item>
+    </style>
+
+    <style name="CommonGreenCheckBoxStyle">
+        <item name="android:button">@drawable/common_green_checkbox</item>
+    </style>
+
+    <style name="MultiChoose">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="item_textColor">#666666</item>
+        <item name="item_backgroundColor">#ffffff</item>
+        <item name="item_selectedTextColor">@color/main_color</item>
+        <item name="item_selectedBackgroundColor">#ffffff</item>
+        <item name="item_radius">15dp</item>
+        <item name="item_strokeColor">#939393</item>
+        <item name="item_selectedStrokeColor">@color/main_color</item>
+        <item name="item_strokeWidth">1px</item>
+        <item name="item_horizontalSpacing">10dp</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="item_horizontalPadding">10dp</item>
+        <item name="item_verticalPadding">5dp</item>
+        <!--单位dp-->
+        <item name="item_width">80</item>
+        <item name="item_height">wrap_content</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="item_maxEms">5</item>
+        <!--多选-->
+        <item name="item_multiChooseable">true</item>
+    </style>
+
+    <style name="SingleChoose">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="item_textColor">#666666</item>
+        <item name="item_backgroundColor">#ffffff</item>
+        <item name="item_selectedTextColor">@color/main_color</item>
+        <item name="item_selectedBackgroundColor">#ffffff</item>
+        <item name="item_radius">15dp</item>
+        <item name="item_strokeColor">#939393</item>
+        <item name="item_selectedStrokeColor">@color/main_color</item>
+        <item name="item_strokeWidth">1px</item>
+        <item name="item_horizontalSpacing">10dp</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="item_horizontalPadding">10dp</item>
+        <item name="item_verticalPadding">5dp</item>
+        <!--单位dp-->
+        <item name="item_width">150</item>
+        <item name="item_height">wrap_content</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="item_maxEms">5</item>
+        <item name="item_singleLine">true</item>
+        <item name="item_textSize">14dp</item>
+        <!--单选-->
+        <item name="item_multiChooseable">false</item>
+        <item name="item_click">true</item>
+    </style>
+
+
+    <style name="SpecSingleChoose">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="item_textColor">#000000</item>
+        <item name="item_backgroundColor">#ececec</item>
+        <item name="item_selectedTextColor">@color/color_ffffff</item>
+        <item name="item_selectedBackgroundColor">@color/main_color</item>
+        <item name="item_radius">5dp</item>
+        <item name="item_strokeColor">#939393</item>
+        <item name="item_selectedStrokeColor">@color/transparent</item>
+        <item name="item_strokeWidth">0px</item>
+        <item name="item_horizontalSpacing">10dp</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="item_horizontalPadding">20dp</item>
+        <item name="item_verticalPadding">7dp</item>
+        <!--单位dp-->
+        <item name="item_width">100</item>
+        <item name="item_height">wrap_content</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="item_maxEms">10</item>
+        <!--单选-->
+        <item name="item_multiChooseable">false</item>
+        <item name="item_click">true</item>
+    </style>
+
+    <style name="CommonClockCheckBoxStyle">
+        <item name="android:button">@drawable/common_clock_checkbox</item>
+    </style>
+
+
+
+</resources>

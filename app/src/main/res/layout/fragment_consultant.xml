@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.fragment.main.ConsultantFragment">
+
+    <include layout="@layout/include_titlebar_common"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_185dp"
+                android:layout_margin="@dimen/dimen_15dp"
+                android:background="@drawable/icon_consultant_banner"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:indicator_drawable_selected="@drawable/banner_selected"
+                app:indicator_drawable_unselected="@drawable/banner_unselected" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:overScrollMode="never"/>
+
+            <com.jxxx.gaotang.conpoment.widget.MyRadioGroup
+                android:id="@+id/mgp_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_20dp">
+
+
+                <RadioButton
+                    android:id="@+id/rb_nutritionist"
+                    android:background="@drawable/blue_checkbox"
+                    android:layout_width="@dimen/dimen_130dp"
+                    android:layout_height="wrap_content"
+                    android:text="健康营养师"
+                    android:button="@null"
+                    android:textColor="@drawable/blue_checkbox_tv"
+                    android:paddingLeft="@dimen/dimen_20dp"
+                    android:paddingRight="@dimen/dimen_20dp"
+                    android:paddingTop="@dimen/dimen_7dp"
+                    android:paddingBottom="@dimen/dimen_7dp"
+                    android:layout_marginRight="@dimen/dimen_40dp"
+                    android:textSize="@dimen/dimen_18dp"
+                    android:gravity="center"/>
+
+                <RadioButton
+                    android:id="@+id/rb_specialist"
+                    android:background="@drawable/blue_checkbox"
+                    android:layout_width="@dimen/dimen_130dp"
+                    android:layout_height="wrap_content"
+                    android:text="专科医生"
+                    android:button="@null"
+                    android:textColor="@drawable/blue_checkbox_tv"
+                    android:paddingLeft="@dimen/dimen_20dp"
+                    android:paddingRight="@dimen/dimen_20dp"
+                    android:paddingTop="@dimen/dimen_7dp"
+                    android:paddingBottom="@dimen/dimen_7dp"
+                    android:layout_marginLeft="@dimen/dimen_40dp"
+                    android:textSize="@dimen/dimen_18dp"
+                    android:gravity="center"/>
+
+
+            </com.jxxx.gaotang.conpoment.widget.MyRadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_cor_white"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:padding="@dimen/dimen_10dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/notosanshans_bold"
+                        android:includeFontPadding="false"
+                        android:text="地区 "
+                        android:textColor="@color/color_4d4d4d"
+                        android:textSize="@dimen/dimen_15dp"
+                        android:drawableRight="@drawable/icon_bottom"
+                        android:layout_marginLeft="@dimen/dimen_15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/notosanshans_bold"
+                        android:includeFontPadding="false"
+                        android:text="排序 "
+                        android:textColor="@color/color_4d4d4d"
+                        android:textSize="@dimen/dimen_15dp"
+                        android:drawableRight="@drawable/icon_bottom"
+                        android:layout_marginLeft="@dimen/dimen_50dp"/>
+
+                    <Space
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/notosanshans_bold"
+                        android:includeFontPadding="false"
+                        android:text="筛选 "
+                        android:textSize="@dimen/dimen_15dp"
+                        android:textColor="@color/color_4d4d4d"
+                        android:drawableRight="@drawable/icon_bottom"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_all_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

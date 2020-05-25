@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.main.MineFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@drawable/shape_radius_orange_bottom_left"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dimen_15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_msg"
+                            android:tint="@color/color_ffffff"
+                            android:layout_marginLeft="@dimen/dimen_18dp"/>
+
+                        <Space
+                            android:layout_width="@dimen/dimen_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_scanning"
+                            android:layout_marginRight="@dimen/dimen_25dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_qr_code"
+                            android:layout_marginRight="@dimen/dimen_25dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_setting"
+                            android:tint="@color/color_ffffff"
+                            android:layout_marginRight="@dimen/dimen_18dp"/>
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="@dimen/dimen_35dp"
+                        android:paddingLeft="@dimen/dimen_16dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/civ_head"
+                            android:layout_width="@dimen/dimen_70dp"
+                            android:layout_height="@dimen/dimen_70dp"
+                            android:src="@drawable/icon_head"/>
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="胖头鱼"
+                            android:textColor="@color/color_ffffff"
+                            android:textSize="@dimen/dimen_18dp"
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/notosanshans_medium"
+                            android:layout_toRightOf="@id/civ_head"
+                            android:layout_marginTop="@dimen/dimen_7dp"
+                            android:layout_marginLeft="@dimen/dimen_12dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID6566684"
+                            android:textColor="@color/color_ffffff"
+                            android:textSize="@dimen/dimen_18dp"
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/notosanshans_medium"
+                            android:layout_toRightOf="@id/civ_head"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/dimen_7dp"
+                            android:layout_marginLeft="@dimen/dimen_12dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_mine_vip"
+                            android:layout_toRightOf="@id/tv_name"
+                            android:layout_marginTop="@dimen/dimen_7dp"
+                            android:layout_marginLeft="@dimen/dimen_10dp"/>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dimen_30dp">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dimen_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textColor="@color/color_ffffff"
+                                android:fontFamily="@font/notosanshans_medium"
+                                android:includeFontPadding="false"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="动态"
+                                android:textColor="@color/color_ffffff"
+                                android:fontFamily="@font/notosanshans_medium"
+                                android:includeFontPadding="false"
+                                android:layout_marginTop="@dimen/dimen_10dp"/>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="@dimen/dimen_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textColor="@color/color_ffffff"
+                                android:fontFamily="@font/notosanshans_medium"
+                                android:includeFontPadding="false"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="关注"
+                                android:textColor="@color/color_ffffff"
+                                android:fontFamily="@font/notosanshans_medium"
+                                android:includeFontPadding="false"
+                                android:layout_marginTop="@dimen/dimen_10dp"/>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="@dimen/dimen_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textColor="@color/color_ffffff"
+                                android:fontFamily="@font/notosanshans_medium"
+                                android:includeFontPadding="false"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="文章"
+                                android:textColor="@color/color_ffffff"
+                                android:fontFamily="@font/notosanshans_medium"
+                                android:includeFontPadding="false"
+                                android:layout_marginTop="@dimen/dimen_10dp"/>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="@dimen/dimen_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textColor="@color/color_ffffff"
+                                android:fontFamily="@font/notosanshans_medium"
+                                android:includeFontPadding="false"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="粉丝"
+                                android:textColor="@color/color_ffffff"
+                                android:fontFamily="@font/notosanshans_medium"
+                                android:includeFontPadding="false"
+                                android:layout_marginTop="@dimen/dimen_10dp"/>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="@dimen/dimen_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textColor="@color/color_ffffff"
+                                android:fontFamily="@font/notosanshans_medium"
+                                android:includeFontPadding="false"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="评论"
+                                android:textColor="@color/color_ffffff"
+                                android:fontFamily="@font/notosanshans_medium"
+                                android:includeFontPadding="false"
+                                android:layout_marginTop="@dimen/dimen_10dp"/>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_90dp"
+                    android:src="@drawable/icon_mine_member"
+                    android:layout_marginTop="220dp"
+                    />
+
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_14dp"
+                android:paddingRight="@dimen/dimen_14dp"
+                android:layout_marginTop="@dimen/dimen_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    android:src="@drawable/icon_orange_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanshans_bold"
+                    android:includeFontPadding="false"
+                    android:text="我的服务"
+                    android:textColor="@color/color_000000"
+                    android:textSize="@dimen/dimen_18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_order"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的订单"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_integral"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的积分"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_address"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收货地址"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_exchange"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="积分兑换"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_14dp"
+                android:paddingRight="@dimen/dimen_14dp"
+                android:layout_marginTop="@dimen/dimen_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    android:src="@drawable/icon_green_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanshans_bold"
+                    android:includeFontPadding="false"
+                    android:text="更多服务"
+                    android:textColor="@color/color_000000"
+                    android:textSize="@dimen/dimen_18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_consultant"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_jkgw"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="健康顾问"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_advisory"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_wdzx"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的咨询"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_family_bind"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_qrbd"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="亲人绑定"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_profile"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_grda"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个人档案"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_my_client"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_wdkh"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的客户"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_my_bill"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_wdkd"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的开单"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_my_task"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_wdrw"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的任务"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_my_commission"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_wdtc"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的提成"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_invite"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_tjhy"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推荐好友"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_complaint"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_tsjy"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="投诉建议"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_newbie_tutorial"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_xsjc"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="新手教程"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_activity_record"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_hdjl"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动记录"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner_two"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60dp"
+                android:layout_margin="@dimen/dimen_15dp"
+                android:background="@drawable/icon_mine_banner"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:indicator_drawable_selected="@drawable/banner_selected"
+                app:indicator_drawable_unselected="@drawable/banner_unselected" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_14dp"
+                android:paddingRight="@dimen/dimen_14dp"
+                android:layout_marginTop="@dimen/dimen_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    android:src="@drawable/icon_blue_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanshans_bold"
+                    android:includeFontPadding="false"
+                    android:text="合作"
+                    android:textColor="@color/color_000000"
+                    android:textSize="@dimen/dimen_18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_swhz"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="合作商务"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_hhr"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="合伙人"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_yysrz"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="营养师入驻"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:src="@drawable/icon_mine_ysrz"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="医生入驻"
+                        android:textColor="@color/color_666666"
+                        android:fontFamily="@font/notosanshans_medium"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

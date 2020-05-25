@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_110dp">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/dimen_75dp"
+        android:layout_height="@dimen/dimen_75dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:src="@drawable/icon_head" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_18dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:fontFamily="@font/notosanshans_medium"
+        android:includeFontPadding="false"
+        android:text="李娜"
+        android:textColor="@color/color_000000"
+        android:textSize="@dimen/dimen_16dp" />
+
+    <TextView
+        android:id="@+id/tv_doctor_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_toRightOf="@id/tv_name"
+        android:fontFamily="@font/notosanshans_regular"
+        android:includeFontPadding="false"
+        android:text="健康顾问-医生"
+        android:textColor="@color/color_FF8100"
+        android:textSize="@dimen/dimen_12dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:drawableLeft="@drawable/icon_loaction"
+        android:fontFamily="@font/notosanshans_regular"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:text="宁波市"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/dimen_12dp" />
+
+
+    <TextView
+        android:id="@+id/tv_worker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:fontFamily="@font/notosanshans_medium"
+        android:includeFontPadding="false"
+        android:text="擅长:国家一级营养师、国家二级心里学专注三高营养搭配研究...."
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/dimen_10dp"
+        android:layout_below="@id/tv_name"/>
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:fontFamily="@font/notosanshans_medium"
+        android:includeFontPadding="false"
+        android:text="190人"
+        android:textColor="@color/color_00A1FF"
+        android:textSize="@dimen/dimen_16dp"
+        android:layout_below="@+id/tv_worker"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:layout_toRightOf="@id/tv_number"
+        android:fontFamily="@font/notosanshans_medium"
+        android:includeFontPadding="false"
+        android:text="已绑定"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/dimen_10dp"
+        android:layout_below="@+id/tv_worker"/>
+
+    <Button
+        android:id="@+id/btn_detail"
+        android:layout_width="@dimen/dimen_50dp"
+        android:layout_height="@dimen/dimen_20dp"
+        android:background="@drawable/shape_radius_blue"
+        android:text="Ta"
+        android:textColor="@color/color_ffffff"
+        android:includeFontPadding="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_15dp"/>
+
+</RelativeLayout>
